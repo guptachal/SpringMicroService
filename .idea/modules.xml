@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/JwtAuthorities/JwtAuthorities.iml" filepath="$PROJECT_DIR$/JwtAuthorities/JwtAuthorities.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/SpringMicroService.iml" filepath="$PROJECT_DIR$/.idea/SpringMicroService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/accountManagement/accountManagement.iml" filepath="$PROJECT_DIR$/accountManagement/accountManagement.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apiGateway/apiGateway.iml" filepath="$PROJECT_DIR$/apiGateway/apiGateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/blog-ws/blog-ws.iml" filepath="$PROJECT_DIR$/blog-ws/blog-ws.iml" />
+      <module fileurl="file://$PROJECT_DIR$/configServer/configServer.iml" filepath="$PROJECT_DIR$/configServer/configServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/discoveryService/discoveryService.iml" filepath="$PROJECT_DIR$/discoveryService/discoveryService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JWTTokenProvider/loginWS.iml" filepath="$PROJECT_DIR$/JWTTokenProvider/loginWS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smtp/smtp.iml" filepath="$PROJECT_DIR$/smtp/smtp.iml" />
+    </modules>
+  </component>
+</project>
