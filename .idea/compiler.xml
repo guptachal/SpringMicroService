@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="discoveryService" />
+        <module name="JwtAuthorities" />
+        <module name="loginWS" />
+        <module name="smtp" />
+        <module name="configServer" />
+        <module name="apiGateway" />
+        <module name="accountManagement" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="accountManagement" target="17" />
+      <module name="apiGateway" target="17" />
+      <module name="configServer" target="17" />
+      <module name="discoveryService" target="19" />
+      <module name="JwtAuthorities" target="17" />
+      <module name="loginWS" target="17" />
+      <module name="smtp" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="JwtAuthorities" options="-parameters" />
+      <module name="accountManagement" options="-parameters" />
+      <module name="apiGateway" options="-parameters" />
+      <module name="configServer" options="-parameters" />
+      <module name="discoveryService" options="-parameters" />
+      <module name="loginWS" options="-parameters" />
+      <module name="smtp" options="-parameters" />
+    </option>
+  </component>
+</project>
