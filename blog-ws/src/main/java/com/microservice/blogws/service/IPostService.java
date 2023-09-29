@@ -10,5 +10,5 @@ public interface IPostService {
     List<Post> getPostByTitle(String title) throws Exception;
     List<Post> getPostByAuthor(String author) throws Exception;
     Post updatePostDescription(Post post,String upDatedDescription) throws Exception;
-
+    Post updatePost(Post post) throws Exception;
 }
