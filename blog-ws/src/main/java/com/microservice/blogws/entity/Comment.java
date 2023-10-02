@@ -1,30 +1,30 @@
 package com.microservice.blogws.entity;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
-import org.jetbrains.annotations.NotNull;
+import lombok.Setter;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.Date;
-import java.util.Set;
 
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Document(value = "Post")
-public class Post {
+@Getter
+@Setter
+@Document(value = "Comment")
+public class Comment {
     @Id
     private String id;
-    @NotNull
-    private String title;
-    private String description;
-    private String content;
+    private String name;
+    private String email;
+    private String comment;
+    private int like;
     private Date createdAt;
     private Date updatedAt;
-    private String author;
-    @DBRef(db = "Comment")
-    private Set<Comment> commentSet;
+    @DBRef(db="Post")
+    private Post post;
 }

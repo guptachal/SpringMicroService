@@ -1,6 +1,5 @@
 package com.microservice.accountManagement.accountController;
 
-import com.sun.org.apache.regexp.internal.RE;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;

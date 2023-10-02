@@ -61,6 +61,7 @@ public class PostMapper {
     public PostResponse getAllPost(int pageNo, int pageSize, String sortBy, String sortDir) throws Exception {
         try {
             Page<Post> posts = service.getAllPost(pageNo, pageSize, sortBy, sortDir);
+            posts.forEach(x->System.out.println(x));
             Page<PostDto> postDtos = mapper.convertToResponsePage(posts, PostDto.class);
 
             // Create a new PostResponse instance and set the posts property
@@ -71,13 +72,10 @@ public class PostMapper {
             response.setTotalElements(postDtos.getTotalElements());
             response.setTotalPages(postDtos.getTotalPages());
             response.setLast(posts.isLast());
-
-
             return response;
         } catch (Exception ex) {
             // Handle exceptions here, e.g., log or rethrow
             throw ex;
         }
     }
-
 }

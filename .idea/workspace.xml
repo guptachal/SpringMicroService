@@ -5,16 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e866d05e-fcda-4148-8756-bed430bdea0d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/blog-ws/src/main/java/com/microservice/blogws/utils/AppConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-ws/src/main/java/com/microservice/blogws/entity/Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-ws/src/main/java/com/microservice/blogws/repositories/ICommentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-ws/src/main/java/com/microservice/blogws/service/ICommentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-ws/src/main/java/com/microservice/blogws/service/impl/CommentServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-ws/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/blog-ws/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-ws/src/main/java/com/microservice/blogws/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-ws/src/main/java/com/microservice/blogws/controller/PostController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-ws/src/main/java/com/microservice/blogws/mapper/CommonMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-ws/src/main/java/com/microservice/blogws/mapper/CommonMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accountManagement/src/main/java/com/microservice/accountManagement/accountController/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/accountManagement/src/main/java/com/microservice/accountManagement/accountController/AccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-ws/src/main/java/com/microservice/blogws/entity/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-ws/src/main/java/com/microservice/blogws/entity/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-ws/src/main/java/com/microservice/blogws/exception/ResourceNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-ws/src/main/java/com/microservice/blogws/exception/ResourceNotFoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog-ws/src/main/java/com/microservice/blogws/mapper/PostMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-ws/src/main/java/com/microservice/blogws/mapper/PostMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-ws/src/main/java/com/microservice/blogws/payload/PostDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-ws/src/main/java/com/microservice/blogws/payload/PostDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-ws/src/main/java/com/microservice/blogws/payload/PostResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-ws/src/main/java/com/microservice/blogws/payload/PostResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-ws/src/main/java/com/microservice/blogws/service/IPostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-ws/src/main/java/com/microservice/blogws/service/IPostService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-ws/src/main/java/com/microservice/blogws/service/impl/PostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-ws/src/main/java/com/microservice/blogws/service/impl/PostServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
