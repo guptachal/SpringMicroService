@@ -1,9 +1,12 @@
 package com.microservice.blogws.payload;
 
-import lombok.Data;
+import lombok.*;
 
 import java.util.Date;
-@Data
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class PostDto {
     private String id;
     private String title;

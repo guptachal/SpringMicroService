@@ -3,15 +3,19 @@ package com.microservice.blogws.service.impl;
 import com.microservice.blogws.entity.Post;
 import com.microservice.blogws.exception.BlogAPIException;
 import com.microservice.blogws.exception.ResourceNotFoundException;
+import com.microservice.blogws.payload.PostResponse;
 import com.microservice.blogws.repositories.IPostRepository;
 import com.microservice.blogws.service.IPostService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.List;
 @Service
@@ -99,6 +103,21 @@ public class PostServiceImpl implements IPostService {
             }
         }catch (ResourceNotFoundException ex){
             logger.info("Unable to find the post with the title"+post.getTitle());
+            logger.error(String.valueOf(ex));
+            throw new Exception(ex);
+        }
+    }
+    @Override
+    public Page<Post> getAllPost(int pageNo, int pageSize, String sortBy, String sortDir) throws Exception {
+        try{
+            // Create the pageable object
+            Sort sort = sortDir.equalsIgnoreCase(Sort.Direction.ASC.name()) ? Sort.by(sortBy).descending()
+                    : Sort.by(sortBy).ascending();
+            Pageable pageable = PageRequest.of(pageNo,pageSize, Sort.by(sortBy));
+            Page<Post> posts = postRepository.findAll(pageable);
+            return posts;
+        }catch (ResourceNotFoundException ex){
+            logger.info("There's nothing in the db!");
             logger.error(String.valueOf(ex));
             throw new Exception(ex);
         }

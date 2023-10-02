@@ -1,7 +1,12 @@
 package com.microservice.blogws.payload;
 
-import java.util.List;
+import lombok.*;
 
+import java.util.List;
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class PostResponse {
     private List<PostDto> posts;
     private  int pageNo;
@@ -9,4 +14,5 @@ public class PostResponse {
     private long totalElements;
     private long totalPages;
     private boolean isLast;
-}
+
+    }
